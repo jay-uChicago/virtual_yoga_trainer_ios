@@ -1,0 +1,1136 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		591D3EC51CFF7F130059011C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D3EC41CFF7F120059011C /* AVFoundation.framework */; };
+		591D3ECB1CFF7F5F0059011C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D3ECA1CFF7F5F0059011C /* CoreMedia.framework */; };
+		591D3ECD1CFF7F9F0059011C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D3ECC1CFF7F9F0059011C /* AssetsLibrary.framework */; };
+		591D3ECF1CFF7FCE0059011C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D3ECE1CFF7FCE0059011C /* ImageIO.framework */; };
+		591D3ED21CFF85C30059011C /* ios_image_load.mm in Sources */ = {isa = PBXBuildFile; fileRef = 591D3ED11CFF85C30059011C /* ios_image_load.mm */; };
+		591D3ED51CFF85FD0059011C /* tensorflow_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 591D3ED31CFF85FD0059011C /* tensorflow_utils.mm */; };
+		591D3EDF1CFFAD230059011C /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D3EDD1CFFAD230059011C /* libprotobuf-lite.a */; };
+		591D3EE01CFFAD230059011C /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 591D3EDE1CFFAD230059011C /* libprotobuf.a */; };
+		592FF8B918ECBD7600C164F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592FF8B818ECBD7600C164F8 /* Foundation.framework */; };
+		592FF8BB18ECBD7600C164F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592FF8BA18ECBD7600C164F8 /* CoreGraphics.framework */; };
+		592FF90218ECC66200C164F8 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 592FF90118ECC66200C164F8 /* main.mm */; };
+		592FF90D18EDD0DA00C164F8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592FF90A18EDD0DA00C164F8 /* MainStoryboard_iPhone.storyboard */; };
+		592FF92518EE240200C164F8 /* CameraExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 592FF92218EE240200C164F8 /* CameraExampleAppDelegate.m */; };
+		592FF92618EE240200C164F8 /* CameraExampleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 592FF92418EE240200C164F8 /* CameraExampleViewController.mm */; };
+		5993C7721D5D4E980048CE6A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5993C7711D5D4E980048CE6A /* Accelerate.framework */; };
+		9D576020216D42EB00535D50 /* yoga101_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D57601F216D42EB00535D50 /* yoga101_labels.txt */; };
+		9D9BA06A1FB913F3002CD7C3 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F1B1FB913F3002CD7C3 /* CMakeLists.txt */; };
+		9D9BA07D1FB913F3002CD7C3 /* AdolcForward in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F321FB913F3002CD7C3 /* AdolcForward */; };
+		9D9BA07E1FB913F3002CD7C3 /* AlignedVector3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F331FB913F3002CD7C3 /* AlignedVector3 */; };
+		9D9BA07F1FB913F3002CD7C3 /* ArpackSupport in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F341FB913F3002CD7C3 /* ArpackSupport */; };
+		9D9BA0801FB913F3002CD7C3 /* AutoDiff in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F351FB913F3002CD7C3 /* AutoDiff */; };
+		9D9BA0811FB913F3002CD7C3 /* BVH in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F361FB913F3002CD7C3 /* BVH */; };
+		9D9BA0821FB913F3002CD7C3 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F371FB913F3002CD7C3 /* CMakeLists.txt */; };
+		9D9BA0831FB913F3002CD7C3 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F391FB913F3002CD7C3 /* CMakeLists.txt */; };
+		9D9BA0841FB913F3002CD7C3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B9F3C1FB913F3002CD7C3 /* README.md */; };
+		9D9BA0851FB913F3002CD7C3 /* Tensor in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F971FB913F3002CD7C3 /* Tensor */; };
+		9D9BA0861FB913F3002CD7C3 /* TensorSymmetry in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F981FB913F3002CD7C3 /* TensorSymmetry */; };
+		9D9BA0871FB913F3002CD7C3 /* ThreadPool in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F991FB913F3002CD7C3 /* ThreadPool */; };
+		9D9BA0881FB913F3002CD7C3 /* EulerAngles in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F9A1FB913F3002CD7C3 /* EulerAngles */; };
+		9D9BA0891FB913F3002CD7C3 /* FFT in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F9B1FB913F3002CD7C3 /* FFT */; };
+		9D9BA08A1FB913F3002CD7C3 /* IterativeSolvers in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F9C1FB913F3002CD7C3 /* IterativeSolvers */; };
+		9D9BA08B1FB913F3002CD7C3 /* KroneckerProduct in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F9D1FB913F3002CD7C3 /* KroneckerProduct */; };
+		9D9BA08C1FB913F3002CD7C3 /* LevenbergMarquardt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F9E1FB913F3002CD7C3 /* LevenbergMarquardt */; };
+		9D9BA08D1FB913F3002CD7C3 /* MatrixFunctions in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9F9F1FB913F3002CD7C3 /* MatrixFunctions */; };
+		9D9BA08E1FB913F3002CD7C3 /* MoreVectorization in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA01FB913F3002CD7C3 /* MoreVectorization */; };
+		9D9BA08F1FB913F3002CD7C3 /* MPRealSupport in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA11FB913F3002CD7C3 /* MPRealSupport */; };
+		9D9BA0901FB913F3002CD7C3 /* NonLinearOptimization in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA21FB913F3002CD7C3 /* NonLinearOptimization */; };
+		9D9BA0911FB913F3002CD7C3 /* NumericalDiff in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA31FB913F3002CD7C3 /* NumericalDiff */; };
+		9D9BA0921FB913F3002CD7C3 /* OpenGLSupport in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA41FB913F3002CD7C3 /* OpenGLSupport */; };
+		9D9BA0931FB913F3002CD7C3 /* Polynomials in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA51FB913F3002CD7C3 /* Polynomials */; };
+		9D9BA0941FB913F3002CD7C3 /* Skyline in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA61FB913F3002CD7C3 /* Skyline */; };
+		9D9BA0951FB913F3002CD7C3 /* SparseExtra in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA71FB913F3002CD7C3 /* SparseExtra */; };
+		9D9BA0961FB913F3002CD7C3 /* SpecialFunctions in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA81FB913F3002CD7C3 /* SpecialFunctions */; };
+		9D9BA0971FB913F3002CD7C3 /* Splines in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FA91FB913F3002CD7C3 /* Splines */; };
+		9D9BA0981FB913F3002CD7C3 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FB51FB913F3002CD7C3 /* CMakeLists.txt */; };
+		9D9BA0991FB913F3002CD7C3 /* CopyrightMINPACK.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9B9FC61FB913F3002CD7C3 /* CopyrightMINPACK.txt */; };
+		9D9BA09A1FB913F3002CD7C3 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9D9BA0021FB913F3002CD7C3 /* README.txt */; };
+		CBB0B4501E8263FC00C7F7F2 /* mem_graph.pb in Resources */ = {isa = PBXBuildFile; fileRef = CBB0B44F1E8263FC00C7F7F2 /* mem_graph.pb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		591D3EC41CFF7F120059011C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		591D3EC61CFF7F370059011C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		591D3EC81CFF7F500059011C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		591D3ECA1CFF7F5F0059011C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		591D3ECC1CFF7F9F0059011C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		591D3ECE1CFF7FCE0059011C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		591D3ED01CFF85C30059011C /* ios_image_load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ios_image_load.h; sourceTree = SOURCE_ROOT; };
+		591D3ED11CFF85C30059011C /* ios_image_load.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ios_image_load.mm; sourceTree = SOURCE_ROOT; };
+		591D3ED31CFF85FD0059011C /* tensorflow_utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = tensorflow_utils.mm; sourceTree = SOURCE_ROOT; };
+		591D3ED41CFF85FD0059011C /* tensorflow_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tensorflow_utils.h; sourceTree = SOURCE_ROOT; };
+		591D3EDD1CFFAD230059011C /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-lite.a"; path = "../../makefile/gen/protobuf_ios/lib/libprotobuf-lite.a"; sourceTree = "<group>"; };
+		591D3EDE1CFFAD230059011C /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = ../../makefile/gen/protobuf_ios/lib/libprotobuf.a; sourceTree = "<group>"; };
+		592FF8B518ECBD7600C164F8 /* CameraExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		592FF8B818ECBD7600C164F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		592FF8BA18ECBD7600C164F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		592FF90118ECC66200C164F8 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = SOURCE_ROOT; };
+		592FF90318ECCB8300C164F8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		592FF90B18EDD0DA00C164F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		592FF92118EE240200C164F8 /* CameraExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraExampleAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		592FF92218EE240200C164F8 /* CameraExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraExampleAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		592FF92318EE240200C164F8 /* CameraExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraExampleViewController.h; sourceTree = SOURCE_ROOT; };
+		592FF92418EE240200C164F8 /* CameraExampleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CameraExampleViewController.mm; sourceTree = SOURCE_ROOT; };
+		5993C7711D5D4E980048CE6A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		9D57601F216D42EB00535D50 /* yoga101_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yoga101_labels.txt; sourceTree = "<group>"; };
+		9D9B9F1B1FB913F3002CD7C3 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9D9B9F321FB913F3002CD7C3 /* AdolcForward */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AdolcForward; sourceTree = "<group>"; };
+		9D9B9F331FB913F3002CD7C3 /* AlignedVector3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AlignedVector3; sourceTree = "<group>"; };
+		9D9B9F341FB913F3002CD7C3 /* ArpackSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArpackSupport; sourceTree = "<group>"; };
+		9D9B9F351FB913F3002CD7C3 /* AutoDiff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoDiff; sourceTree = "<group>"; };
+		9D9B9F361FB913F3002CD7C3 /* BVH */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BVH; sourceTree = "<group>"; };
+		9D9B9F371FB913F3002CD7C3 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9D9B9F391FB913F3002CD7C3 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9D9B9F3C1FB913F3002CD7C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D9B9F3D1FB913F3002CD7C3 /* Tensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tensor.h; sourceTree = "<group>"; };
+		9D9B9F3E1FB913F3002CD7C3 /* TensorArgMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorArgMax.h; sourceTree = "<group>"; };
+		9D9B9F3F1FB913F3002CD7C3 /* TensorAssign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorAssign.h; sourceTree = "<group>"; };
+		9D9B9F401FB913F3002CD7C3 /* TensorBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorBase.h; sourceTree = "<group>"; };
+		9D9B9F411FB913F3002CD7C3 /* TensorBroadcasting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorBroadcasting.h; sourceTree = "<group>"; };
+		9D9B9F421FB913F3002CD7C3 /* TensorChipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorChipping.h; sourceTree = "<group>"; };
+		9D9B9F431FB913F3002CD7C3 /* TensorConcatenation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorConcatenation.h; sourceTree = "<group>"; };
+		9D9B9F441FB913F3002CD7C3 /* TensorContraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorContraction.h; sourceTree = "<group>"; };
+		9D9B9F451FB913F3002CD7C3 /* TensorContractionBlocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorContractionBlocking.h; sourceTree = "<group>"; };
+		9D9B9F461FB913F3002CD7C3 /* TensorContractionCuda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorContractionCuda.h; sourceTree = "<group>"; };
+		9D9B9F471FB913F3002CD7C3 /* TensorContractionMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorContractionMapper.h; sourceTree = "<group>"; };
+		9D9B9F481FB913F3002CD7C3 /* TensorContractionThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorContractionThreadPool.h; sourceTree = "<group>"; };
+		9D9B9F491FB913F3002CD7C3 /* TensorConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorConversion.h; sourceTree = "<group>"; };
+		9D9B9F4A1FB913F3002CD7C3 /* TensorConvolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorConvolution.h; sourceTree = "<group>"; };
+		9D9B9F4B1FB913F3002CD7C3 /* TensorCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorCostModel.h; sourceTree = "<group>"; };
+		9D9B9F4C1FB913F3002CD7C3 /* TensorCustomOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorCustomOp.h; sourceTree = "<group>"; };
+		9D9B9F4D1FB913F3002CD7C3 /* TensorDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDevice.h; sourceTree = "<group>"; };
+		9D9B9F4E1FB913F3002CD7C3 /* TensorDeviceCuda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDeviceCuda.h; sourceTree = "<group>"; };
+		9D9B9F4F1FB913F3002CD7C3 /* TensorDeviceDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDeviceDefault.h; sourceTree = "<group>"; };
+		9D9B9F501FB913F3002CD7C3 /* TensorDeviceSycl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDeviceSycl.h; sourceTree = "<group>"; };
+		9D9B9F511FB913F3002CD7C3 /* TensorDeviceThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDeviceThreadPool.h; sourceTree = "<group>"; };
+		9D9B9F521FB913F3002CD7C3 /* TensorDimensionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDimensionList.h; sourceTree = "<group>"; };
+		9D9B9F531FB913F3002CD7C3 /* TensorDimensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorDimensions.h; sourceTree = "<group>"; };
+		9D9B9F541FB913F3002CD7C3 /* TensorEvalTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorEvalTo.h; sourceTree = "<group>"; };
+		9D9B9F551FB913F3002CD7C3 /* TensorEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorEvaluator.h; sourceTree = "<group>"; };
+		9D9B9F561FB913F3002CD7C3 /* TensorExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorExecutor.h; sourceTree = "<group>"; };
+		9D9B9F571FB913F3002CD7C3 /* TensorExpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorExpr.h; sourceTree = "<group>"; };
+		9D9B9F581FB913F3002CD7C3 /* TensorFFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorFFT.h; sourceTree = "<group>"; };
+		9D9B9F591FB913F3002CD7C3 /* TensorFixedSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorFixedSize.h; sourceTree = "<group>"; };
+		9D9B9F5A1FB913F3002CD7C3 /* TensorForcedEval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorForcedEval.h; sourceTree = "<group>"; };
+		9D9B9F5B1FB913F3002CD7C3 /* TensorForwardDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorForwardDeclarations.h; sourceTree = "<group>"; };
+		9D9B9F5C1FB913F3002CD7C3 /* TensorFunctors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorFunctors.h; sourceTree = "<group>"; };
+		9D9B9F5D1FB913F3002CD7C3 /* TensorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorGenerator.h; sourceTree = "<group>"; };
+		9D9B9F5E1FB913F3002CD7C3 /* TensorGlobalFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorGlobalFunctions.h; sourceTree = "<group>"; };
+		9D9B9F5F1FB913F3002CD7C3 /* TensorImagePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorImagePatch.h; sourceTree = "<group>"; };
+		9D9B9F601FB913F3002CD7C3 /* TensorIndexList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorIndexList.h; sourceTree = "<group>"; };
+		9D9B9F611FB913F3002CD7C3 /* TensorInflation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorInflation.h; sourceTree = "<group>"; };
+		9D9B9F621FB913F3002CD7C3 /* TensorInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorInitializer.h; sourceTree = "<group>"; };
+		9D9B9F631FB913F3002CD7C3 /* TensorIntDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorIntDiv.h; sourceTree = "<group>"; };
+		9D9B9F641FB913F3002CD7C3 /* TensorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorIO.h; sourceTree = "<group>"; };
+		9D9B9F651FB913F3002CD7C3 /* TensorLayoutSwap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorLayoutSwap.h; sourceTree = "<group>"; };
+		9D9B9F661FB913F3002CD7C3 /* TensorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorMacros.h; sourceTree = "<group>"; };
+		9D9B9F671FB913F3002CD7C3 /* TensorMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorMap.h; sourceTree = "<group>"; };
+		9D9B9F681FB913F3002CD7C3 /* TensorMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorMeta.h; sourceTree = "<group>"; };
+		9D9B9F691FB913F3002CD7C3 /* TensorMorphing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorMorphing.h; sourceTree = "<group>"; };
+		9D9B9F6A1FB913F3002CD7C3 /* TensorPadding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorPadding.h; sourceTree = "<group>"; };
+		9D9B9F6B1FB913F3002CD7C3 /* TensorPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorPatch.h; sourceTree = "<group>"; };
+		9D9B9F6C1FB913F3002CD7C3 /* TensorRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorRandom.h; sourceTree = "<group>"; };
+		9D9B9F6D1FB913F3002CD7C3 /* TensorReduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorReduction.h; sourceTree = "<group>"; };
+		9D9B9F6E1FB913F3002CD7C3 /* TensorReductionCuda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorReductionCuda.h; sourceTree = "<group>"; };
+		9D9B9F6F1FB913F3002CD7C3 /* TensorReductionSycl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorReductionSycl.h; sourceTree = "<group>"; };
+		9D9B9F701FB913F3002CD7C3 /* TensorRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorRef.h; sourceTree = "<group>"; };
+		9D9B9F711FB913F3002CD7C3 /* TensorReverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorReverse.h; sourceTree = "<group>"; };
+		9D9B9F721FB913F3002CD7C3 /* TensorScan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorScan.h; sourceTree = "<group>"; };
+		9D9B9F731FB913F3002CD7C3 /* TensorShuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorShuffling.h; sourceTree = "<group>"; };
+		9D9B9F741FB913F3002CD7C3 /* TensorStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorStorage.h; sourceTree = "<group>"; };
+		9D9B9F751FB913F3002CD7C3 /* TensorStriding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorStriding.h; sourceTree = "<group>"; };
+		9D9B9F761FB913F3002CD7C3 /* TensorSycl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSycl.h; sourceTree = "<group>"; };
+		9D9B9F771FB913F3002CD7C3 /* TensorSyclConvertToDeviceExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclConvertToDeviceExpression.h; sourceTree = "<group>"; };
+		9D9B9F781FB913F3002CD7C3 /* TensorSyclExprConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclExprConstructor.h; sourceTree = "<group>"; };
+		9D9B9F791FB913F3002CD7C3 /* TensorSyclExtractAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclExtractAccessor.h; sourceTree = "<group>"; };
+		9D9B9F7A1FB913F3002CD7C3 /* TensorSyclExtractFunctors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclExtractFunctors.h; sourceTree = "<group>"; };
+		9D9B9F7B1FB913F3002CD7C3 /* TensorSyclLeafCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclLeafCount.h; sourceTree = "<group>"; };
+		9D9B9F7C1FB913F3002CD7C3 /* TensorSyclPlaceHolderExpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclPlaceHolderExpr.h; sourceTree = "<group>"; };
+		9D9B9F7D1FB913F3002CD7C3 /* TensorSyclRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclRun.h; sourceTree = "<group>"; };
+		9D9B9F7E1FB913F3002CD7C3 /* TensorSyclTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorSyclTuple.h; sourceTree = "<group>"; };
+		9D9B9F7F1FB913F3002CD7C3 /* TensorTraits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorTraits.h; sourceTree = "<group>"; };
+		9D9B9F801FB913F3002CD7C3 /* TensorUInt128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorUInt128.h; sourceTree = "<group>"; };
+		9D9B9F811FB913F3002CD7C3 /* TensorVolumePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TensorVolumePatch.h; sourceTree = "<group>"; };
+		9D9B9F831FB913F3002CD7C3 /* DynamicSymmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicSymmetry.h; sourceTree = "<group>"; };
+		9D9B9F841FB913F3002CD7C3 /* StaticSymmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticSymmetry.h; sourceTree = "<group>"; };
+		9D9B9F851FB913F3002CD7C3 /* Symmetry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symmetry.h; sourceTree = "<group>"; };
+		9D9B9F871FB913F3002CD7C3 /* TemplateGroupTheory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateGroupTheory.h; sourceTree = "<group>"; };
+		9D9B9F891FB913F3002CD7C3 /* EventCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCount.h; sourceTree = "<group>"; };
+		9D9B9F8A1FB913F3002CD7C3 /* NonBlockingThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonBlockingThreadPool.h; sourceTree = "<group>"; };
+		9D9B9F8B1FB913F3002CD7C3 /* RunQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunQueue.h; sourceTree = "<group>"; };
+		9D9B9F8C1FB913F3002CD7C3 /* SimpleThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleThreadPool.h; sourceTree = "<group>"; };
+		9D9B9F8D1FB913F3002CD7C3 /* ThreadEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadEnvironment.h; sourceTree = "<group>"; };
+		9D9B9F8E1FB913F3002CD7C3 /* ThreadLocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadLocal.h; sourceTree = "<group>"; };
+		9D9B9F8F1FB913F3002CD7C3 /* ThreadPoolInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadPoolInterface.h; sourceTree = "<group>"; };
+		9D9B9F901FB913F3002CD7C3 /* ThreadYield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadYield.h; sourceTree = "<group>"; };
+		9D9B9F921FB913F3002CD7C3 /* CXX11Meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXX11Meta.h; sourceTree = "<group>"; };
+		9D9B9F931FB913F3002CD7C3 /* CXX11Workarounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXX11Workarounds.h; sourceTree = "<group>"; };
+		9D9B9F941FB913F3002CD7C3 /* EmulateArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmulateArray.h; sourceTree = "<group>"; };
+		9D9B9F951FB913F3002CD7C3 /* EmulateCXX11Meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmulateCXX11Meta.h; sourceTree = "<group>"; };
+		9D9B9F961FB913F3002CD7C3 /* MaxSizeVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxSizeVector.h; sourceTree = "<group>"; };
+		9D9B9F971FB913F3002CD7C3 /* Tensor */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tensor; sourceTree = "<group>"; };
+		9D9B9F981FB913F3002CD7C3 /* TensorSymmetry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TensorSymmetry; sourceTree = "<group>"; };
+		9D9B9F991FB913F3002CD7C3 /* ThreadPool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThreadPool; sourceTree = "<group>"; };
+		9D9B9F9A1FB913F3002CD7C3 /* EulerAngles */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EulerAngles; sourceTree = "<group>"; };
+		9D9B9F9B1FB913F3002CD7C3 /* FFT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FFT; sourceTree = "<group>"; };
+		9D9B9F9C1FB913F3002CD7C3 /* IterativeSolvers */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IterativeSolvers; sourceTree = "<group>"; };
+		9D9B9F9D1FB913F3002CD7C3 /* KroneckerProduct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KroneckerProduct; sourceTree = "<group>"; };
+		9D9B9F9E1FB913F3002CD7C3 /* LevenbergMarquardt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LevenbergMarquardt; sourceTree = "<group>"; };
+		9D9B9F9F1FB913F3002CD7C3 /* MatrixFunctions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MatrixFunctions; sourceTree = "<group>"; };
+		9D9B9FA01FB913F3002CD7C3 /* MoreVectorization */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MoreVectorization; sourceTree = "<group>"; };
+		9D9B9FA11FB913F3002CD7C3 /* MPRealSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MPRealSupport; sourceTree = "<group>"; };
+		9D9B9FA21FB913F3002CD7C3 /* NonLinearOptimization */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NonLinearOptimization; sourceTree = "<group>"; };
+		9D9B9FA31FB913F3002CD7C3 /* NumericalDiff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NumericalDiff; sourceTree = "<group>"; };
+		9D9B9FA41FB913F3002CD7C3 /* OpenGLSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenGLSupport; sourceTree = "<group>"; };
+		9D9B9FA51FB913F3002CD7C3 /* Polynomials */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Polynomials; sourceTree = "<group>"; };
+		9D9B9FA61FB913F3002CD7C3 /* Skyline */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Skyline; sourceTree = "<group>"; };
+		9D9B9FA71FB913F3002CD7C3 /* SparseExtra */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseExtra; sourceTree = "<group>"; };
+		9D9B9FA81FB913F3002CD7C3 /* SpecialFunctions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpecialFunctions; sourceTree = "<group>"; };
+		9D9B9FA91FB913F3002CD7C3 /* Splines */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Splines; sourceTree = "<group>"; };
+		9D9B9FAC1FB913F3002CD7C3 /* AutoDiffJacobian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoDiffJacobian.h; sourceTree = "<group>"; };
+		9D9B9FAD1FB913F3002CD7C3 /* AutoDiffScalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoDiffScalar.h; sourceTree = "<group>"; };
+		9D9B9FAE1FB913F3002CD7C3 /* AutoDiffVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoDiffVector.h; sourceTree = "<group>"; };
+		9D9B9FB01FB913F3002CD7C3 /* BVAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVAlgorithms.h; sourceTree = "<group>"; };
+		9D9B9FB11FB913F3002CD7C3 /* KdBVH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KdBVH.h; sourceTree = "<group>"; };
+		9D9B9FB31FB913F3002CD7C3 /* ArpackSelfAdjointEigenSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArpackSelfAdjointEigenSolver.h; sourceTree = "<group>"; };
+		9D9B9FB51FB913F3002CD7C3 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		9D9B9FB61FB913F3002CD7C3 /* EulerAngles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EulerAngles.h; sourceTree = "<group>"; };
+		9D9B9FB71FB913F3002CD7C3 /* EulerSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EulerSystem.h; sourceTree = "<group>"; };
+		9D9B9FB91FB913F3002CD7C3 /* ei_fftw_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ei_fftw_impl.h; sourceTree = "<group>"; };
+		9D9B9FBA1FB913F3002CD7C3 /* ei_kissfft_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ei_kissfft_impl.h; sourceTree = "<group>"; };
+		9D9B9FBC1FB913F3002CD7C3 /* ConstrainedConjGrad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstrainedConjGrad.h; sourceTree = "<group>"; };
+		9D9B9FBD1FB913F3002CD7C3 /* DGMRES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGMRES.h; sourceTree = "<group>"; };
+		9D9B9FBE1FB913F3002CD7C3 /* GMRES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMRES.h; sourceTree = "<group>"; };
+		9D9B9FBF1FB913F3002CD7C3 /* IncompleteLU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncompleteLU.h; sourceTree = "<group>"; };
+		9D9B9FC01FB913F3002CD7C3 /* IterationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IterationController.h; sourceTree = "<group>"; };
+		9D9B9FC11FB913F3002CD7C3 /* MINRES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MINRES.h; sourceTree = "<group>"; };
+		9D9B9FC21FB913F3002CD7C3 /* Scaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scaling.h; sourceTree = "<group>"; };
+		9D9B9FC41FB913F3002CD7C3 /* KroneckerTensorProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KroneckerTensorProduct.h; sourceTree = "<group>"; };
+		9D9B9FC61FB913F3002CD7C3 /* CopyrightMINPACK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CopyrightMINPACK.txt; sourceTree = "<group>"; };
+		9D9B9FC71FB913F3002CD7C3 /* LevenbergMarquardt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevenbergMarquardt.h; sourceTree = "<group>"; };
+		9D9B9FC81FB913F3002CD7C3 /* LMcovar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMcovar.h; sourceTree = "<group>"; };
+		9D9B9FC91FB913F3002CD7C3 /* LMonestep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMonestep.h; sourceTree = "<group>"; };
+		9D9B9FCA1FB913F3002CD7C3 /* LMpar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMpar.h; sourceTree = "<group>"; };
+		9D9B9FCB1FB913F3002CD7C3 /* LMqrsolv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMqrsolv.h; sourceTree = "<group>"; };
+		9D9B9FCD1FB913F3002CD7C3 /* MatrixExponential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixExponential.h; sourceTree = "<group>"; };
+		9D9B9FCE1FB913F3002CD7C3 /* MatrixFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixFunction.h; sourceTree = "<group>"; };
+		9D9B9FCF1FB913F3002CD7C3 /* MatrixLogarithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixLogarithm.h; sourceTree = "<group>"; };
+		9D9B9FD01FB913F3002CD7C3 /* MatrixPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixPower.h; sourceTree = "<group>"; };
+		9D9B9FD11FB913F3002CD7C3 /* MatrixSquareRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixSquareRoot.h; sourceTree = "<group>"; };
+		9D9B9FD21FB913F3002CD7C3 /* StemFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StemFunction.h; sourceTree = "<group>"; };
+		9D9B9FD41FB913F3002CD7C3 /* MathFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathFunctions.h; sourceTree = "<group>"; };
+		9D9B9FD61FB913F3002CD7C3 /* chkder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chkder.h; sourceTree = "<group>"; };
+		9D9B9FD71FB913F3002CD7C3 /* covar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = covar.h; sourceTree = "<group>"; };
+		9D9B9FD81FB913F3002CD7C3 /* dogleg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogleg.h; sourceTree = "<group>"; };
+		9D9B9FD91FB913F3002CD7C3 /* fdjac1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fdjac1.h; sourceTree = "<group>"; };
+		9D9B9FDA1FB913F3002CD7C3 /* HybridNonLinearSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridNonLinearSolver.h; sourceTree = "<group>"; };
+		9D9B9FDB1FB913F3002CD7C3 /* LevenbergMarquardt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevenbergMarquardt.h; sourceTree = "<group>"; };
+		9D9B9FDC1FB913F3002CD7C3 /* lmpar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lmpar.h; sourceTree = "<group>"; };
+		9D9B9FDD1FB913F3002CD7C3 /* qrsolv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrsolv.h; sourceTree = "<group>"; };
+		9D9B9FDE1FB913F3002CD7C3 /* r1mpyq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r1mpyq.h; sourceTree = "<group>"; };
+		9D9B9FDF1FB913F3002CD7C3 /* r1updt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r1updt.h; sourceTree = "<group>"; };
+		9D9B9FE01FB913F3002CD7C3 /* rwupdt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rwupdt.h; sourceTree = "<group>"; };
+		9D9B9FE21FB913F3002CD7C3 /* NumericalDiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericalDiff.h; sourceTree = "<group>"; };
+		9D9B9FE41FB913F3002CD7C3 /* Companion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Companion.h; sourceTree = "<group>"; };
+		9D9B9FE51FB913F3002CD7C3 /* PolynomialSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialSolver.h; sourceTree = "<group>"; };
+		9D9B9FE61FB913F3002CD7C3 /* PolynomialUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialUtils.h; sourceTree = "<group>"; };
+		9D9B9FE81FB913F3002CD7C3 /* SkylineInplaceLU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkylineInplaceLU.h; sourceTree = "<group>"; };
+		9D9B9FE91FB913F3002CD7C3 /* SkylineMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkylineMatrix.h; sourceTree = "<group>"; };
+		9D9B9FEA1FB913F3002CD7C3 /* SkylineMatrixBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkylineMatrixBase.h; sourceTree = "<group>"; };
+		9D9B9FEB1FB913F3002CD7C3 /* SkylineProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkylineProduct.h; sourceTree = "<group>"; };
+		9D9B9FEC1FB913F3002CD7C3 /* SkylineStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkylineStorage.h; sourceTree = "<group>"; };
+		9D9B9FED1FB913F3002CD7C3 /* SkylineUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkylineUtil.h; sourceTree = "<group>"; };
+		9D9B9FEF1FB913F3002CD7C3 /* BlockOfDynamicSparseMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockOfDynamicSparseMatrix.h; sourceTree = "<group>"; };
+		9D9B9FF01FB913F3002CD7C3 /* BlockSparseMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockSparseMatrix.h; sourceTree = "<group>"; };
+		9D9B9FF11FB913F3002CD7C3 /* DynamicSparseMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicSparseMatrix.h; sourceTree = "<group>"; };
+		9D9B9FF21FB913F3002CD7C3 /* MarketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketIO.h; sourceTree = "<group>"; };
+		9D9B9FF31FB913F3002CD7C3 /* MatrixMarketIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixMarketIterator.h; sourceTree = "<group>"; };
+		9D9B9FF41FB913F3002CD7C3 /* RandomSetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomSetter.h; sourceTree = "<group>"; };
+		9D9B9FF81FB913F3002CD7C3 /* CudaSpecialFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CudaSpecialFunctions.h; sourceTree = "<group>"; };
+		9D9B9FF91FB913F3002CD7C3 /* SpecialFunctionsArrayAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialFunctionsArrayAPI.h; sourceTree = "<group>"; };
+		9D9B9FFA1FB913F3002CD7C3 /* SpecialFunctionsFunctors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialFunctionsFunctors.h; sourceTree = "<group>"; };
+		9D9B9FFB1FB913F3002CD7C3 /* SpecialFunctionsHalf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialFunctionsHalf.h; sourceTree = "<group>"; };
+		9D9B9FFC1FB913F3002CD7C3 /* SpecialFunctionsImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialFunctionsImpl.h; sourceTree = "<group>"; };
+		9D9B9FFD1FB913F3002CD7C3 /* SpecialFunctionsPacketMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialFunctionsPacketMath.h; sourceTree = "<group>"; };
+		9D9B9FFF1FB913F3002CD7C3 /* Spline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spline.h; sourceTree = "<group>"; };
+		9D9BA0001FB913F3002CD7C3 /* SplineFitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplineFitting.h; sourceTree = "<group>"; };
+		9D9BA0011FB913F3002CD7C3 /* SplineFwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplineFwd.h; sourceTree = "<group>"; };
+		9D9BA0021FB913F3002CD7C3 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CBB0B44F1E8263FC00C7F7F2 /* mem_graph.pb */ = {isa = PBXFileReference; lastKnownFileType = file; path = mem_graph.pb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		592FF8B218ECBD7600C164F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5993C7721D5D4E980048CE6A /* Accelerate.framework in Frameworks */,
+				591D3EDF1CFFAD230059011C /* libprotobuf-lite.a in Frameworks */,
+				591D3EE01CFFAD230059011C /* libprotobuf.a in Frameworks */,
+				591D3ECF1CFF7FCE0059011C /* ImageIO.framework in Frameworks */,
+				591D3ECD1CFF7F9F0059011C /* AssetsLibrary.framework in Frameworks */,
+				591D3ECB1CFF7F5F0059011C /* CoreMedia.framework in Frameworks */,
+				591D3EC51CFF7F130059011C /* AVFoundation.framework in Frameworks */,
+				592FF8BB18ECBD7600C164F8 /* CoreGraphics.framework in Frameworks */,
+				592FF8B918ECBD7600C164F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		591D3ED61CFFA83A0059011C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9D57601F216D42EB00535D50 /* yoga101_labels.txt */,
+				CBB0B44F1E8263FC00C7F7F2 /* mem_graph.pb */,
+			);
+			path = data;
+			sourceTree = SOURCE_ROOT;
+		};
+		592FF8AA18ECBD3600C164F8 = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F181FB913F3002CD7C3 /* unsupported */,
+				592FF8BE18ECBD7600C164F8 /* yoga101 */,
+				592FF8B718ECBD7600C164F8 /* Frameworks */,
+				592FF8B618ECBD7600C164F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		592FF8B618ECBD7600C164F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				592FF8B518ECBD7600C164F8 /* CameraExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		592FF8B718ECBD7600C164F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5993C7711D5D4E980048CE6A /* Accelerate.framework */,
+				591D3EDD1CFFAD230059011C /* libprotobuf-lite.a */,
+				591D3EDE1CFFAD230059011C /* libprotobuf.a */,
+				591D3ECE1CFF7FCE0059011C /* ImageIO.framework */,
+				591D3ECC1CFF7F9F0059011C /* AssetsLibrary.framework */,
+				591D3ECA1CFF7F5F0059011C /* CoreMedia.framework */,
+				591D3EC81CFF7F500059011C /* CoreImage.framework */,
+				591D3EC61CFF7F370059011C /* CoreFoundation.framework */,
+				591D3EC41CFF7F120059011C /* AVFoundation.framework */,
+				592FF8B818ECBD7600C164F8 /* Foundation.framework */,
+				592FF8BA18ECBD7600C164F8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		592FF8BE18ECBD7600C164F8 /* yoga101 */ = {
+			isa = PBXGroup;
+			children = (
+				591D3ED61CFFA83A0059011C /* data */,
+				592FF90718EDD0DA00C164F8 /* en.lproj */,
+				592FF92118EE240200C164F8 /* CameraExampleAppDelegate.h */,
+				592FF92218EE240200C164F8 /* CameraExampleAppDelegate.m */,
+				592FF92318EE240200C164F8 /* CameraExampleViewController.h */,
+				592FF92418EE240200C164F8 /* CameraExampleViewController.mm */,
+				592FF90318ECCB8300C164F8 /* Info.plist */,
+				591D3ED01CFF85C30059011C /* ios_image_load.h */,
+				591D3ED11CFF85C30059011C /* ios_image_load.mm */,
+				592FF90118ECC66200C164F8 /* main.mm */,
+				591D3ED31CFF85FD0059011C /* tensorflow_utils.mm */,
+				591D3ED41CFF85FD0059011C /* tensorflow_utils.h */,
+			);
+			name = yoga101;
+			path = SimpleExample;
+			sourceTree = "<group>";
+		};
+		592FF90718EDD0DA00C164F8 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				592FF90A18EDD0DA00C164F8 /* MainStoryboard_iPhone.storyboard */,
+			);
+			path = en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		9D9B9F181FB913F3002CD7C3 /* unsupported */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F1B1FB913F3002CD7C3 /* CMakeLists.txt */,
+				9D9B9F311FB913F3002CD7C3 /* Eigen */,
+				9D9BA0021FB913F3002CD7C3 /* README.txt */,
+			);
+			path = unsupported;
+			sourceTree = "<group>";
+		};
+		9D9B9F311FB913F3002CD7C3 /* Eigen */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F321FB913F3002CD7C3 /* AdolcForward */,
+				9D9B9F331FB913F3002CD7C3 /* AlignedVector3 */,
+				9D9B9F341FB913F3002CD7C3 /* ArpackSupport */,
+				9D9B9F351FB913F3002CD7C3 /* AutoDiff */,
+				9D9B9F361FB913F3002CD7C3 /* BVH */,
+				9D9B9F371FB913F3002CD7C3 /* CMakeLists.txt */,
+				9D9B9F381FB913F3002CD7C3 /* CXX11 */,
+				9D9B9F9A1FB913F3002CD7C3 /* EulerAngles */,
+				9D9B9F9B1FB913F3002CD7C3 /* FFT */,
+				9D9B9F9C1FB913F3002CD7C3 /* IterativeSolvers */,
+				9D9B9F9D1FB913F3002CD7C3 /* KroneckerProduct */,
+				9D9B9F9E1FB913F3002CD7C3 /* LevenbergMarquardt */,
+				9D9B9F9F1FB913F3002CD7C3 /* MatrixFunctions */,
+				9D9B9FA01FB913F3002CD7C3 /* MoreVectorization */,
+				9D9B9FA11FB913F3002CD7C3 /* MPRealSupport */,
+				9D9B9FA21FB913F3002CD7C3 /* NonLinearOptimization */,
+				9D9B9FA31FB913F3002CD7C3 /* NumericalDiff */,
+				9D9B9FA41FB913F3002CD7C3 /* OpenGLSupport */,
+				9D9B9FA51FB913F3002CD7C3 /* Polynomials */,
+				9D9B9FA61FB913F3002CD7C3 /* Skyline */,
+				9D9B9FA71FB913F3002CD7C3 /* SparseExtra */,
+				9D9B9FA81FB913F3002CD7C3 /* SpecialFunctions */,
+				9D9B9FA91FB913F3002CD7C3 /* Splines */,
+				9D9B9FAA1FB913F3002CD7C3 /* src */,
+			);
+			path = Eigen;
+			sourceTree = "<group>";
+		};
+		9D9B9F381FB913F3002CD7C3 /* CXX11 */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F391FB913F3002CD7C3 /* CMakeLists.txt */,
+				9D9B9F3A1FB913F3002CD7C3 /* src */,
+				9D9B9F971FB913F3002CD7C3 /* Tensor */,
+				9D9B9F981FB913F3002CD7C3 /* TensorSymmetry */,
+				9D9B9F991FB913F3002CD7C3 /* ThreadPool */,
+			);
+			path = CXX11;
+			sourceTree = "<group>";
+		};
+		9D9B9F3A1FB913F3002CD7C3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F3B1FB913F3002CD7C3 /* Tensor */,
+				9D9B9F821FB913F3002CD7C3 /* TensorSymmetry */,
+				9D9B9F881FB913F3002CD7C3 /* ThreadPool */,
+				9D9B9F911FB913F3002CD7C3 /* util */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9D9B9F3B1FB913F3002CD7C3 /* Tensor */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F3C1FB913F3002CD7C3 /* README.md */,
+				9D9B9F3D1FB913F3002CD7C3 /* Tensor.h */,
+				9D9B9F3E1FB913F3002CD7C3 /* TensorArgMax.h */,
+				9D9B9F3F1FB913F3002CD7C3 /* TensorAssign.h */,
+				9D9B9F401FB913F3002CD7C3 /* TensorBase.h */,
+				9D9B9F411FB913F3002CD7C3 /* TensorBroadcasting.h */,
+				9D9B9F421FB913F3002CD7C3 /* TensorChipping.h */,
+				9D9B9F431FB913F3002CD7C3 /* TensorConcatenation.h */,
+				9D9B9F441FB913F3002CD7C3 /* TensorContraction.h */,
+				9D9B9F451FB913F3002CD7C3 /* TensorContractionBlocking.h */,
+				9D9B9F461FB913F3002CD7C3 /* TensorContractionCuda.h */,
+				9D9B9F471FB913F3002CD7C3 /* TensorContractionMapper.h */,
+				9D9B9F481FB913F3002CD7C3 /* TensorContractionThreadPool.h */,
+				9D9B9F491FB913F3002CD7C3 /* TensorConversion.h */,
+				9D9B9F4A1FB913F3002CD7C3 /* TensorConvolution.h */,
+				9D9B9F4B1FB913F3002CD7C3 /* TensorCostModel.h */,
+				9D9B9F4C1FB913F3002CD7C3 /* TensorCustomOp.h */,
+				9D9B9F4D1FB913F3002CD7C3 /* TensorDevice.h */,
+				9D9B9F4E1FB913F3002CD7C3 /* TensorDeviceCuda.h */,
+				9D9B9F4F1FB913F3002CD7C3 /* TensorDeviceDefault.h */,
+				9D9B9F501FB913F3002CD7C3 /* TensorDeviceSycl.h */,
+				9D9B9F511FB913F3002CD7C3 /* TensorDeviceThreadPool.h */,
+				9D9B9F521FB913F3002CD7C3 /* TensorDimensionList.h */,
+				9D9B9F531FB913F3002CD7C3 /* TensorDimensions.h */,
+				9D9B9F541FB913F3002CD7C3 /* TensorEvalTo.h */,
+				9D9B9F551FB913F3002CD7C3 /* TensorEvaluator.h */,
+				9D9B9F561FB913F3002CD7C3 /* TensorExecutor.h */,
+				9D9B9F571FB913F3002CD7C3 /* TensorExpr.h */,
+				9D9B9F581FB913F3002CD7C3 /* TensorFFT.h */,
+				9D9B9F591FB913F3002CD7C3 /* TensorFixedSize.h */,
+				9D9B9F5A1FB913F3002CD7C3 /* TensorForcedEval.h */,
+				9D9B9F5B1FB913F3002CD7C3 /* TensorForwardDeclarations.h */,
+				9D9B9F5C1FB913F3002CD7C3 /* TensorFunctors.h */,
+				9D9B9F5D1FB913F3002CD7C3 /* TensorGenerator.h */,
+				9D9B9F5E1FB913F3002CD7C3 /* TensorGlobalFunctions.h */,
+				9D9B9F5F1FB913F3002CD7C3 /* TensorImagePatch.h */,
+				9D9B9F601FB913F3002CD7C3 /* TensorIndexList.h */,
+				9D9B9F611FB913F3002CD7C3 /* TensorInflation.h */,
+				9D9B9F621FB913F3002CD7C3 /* TensorInitializer.h */,
+				9D9B9F631FB913F3002CD7C3 /* TensorIntDiv.h */,
+				9D9B9F641FB913F3002CD7C3 /* TensorIO.h */,
+				9D9B9F651FB913F3002CD7C3 /* TensorLayoutSwap.h */,
+				9D9B9F661FB913F3002CD7C3 /* TensorMacros.h */,
+				9D9B9F671FB913F3002CD7C3 /* TensorMap.h */,
+				9D9B9F681FB913F3002CD7C3 /* TensorMeta.h */,
+				9D9B9F691FB913F3002CD7C3 /* TensorMorphing.h */,
+				9D9B9F6A1FB913F3002CD7C3 /* TensorPadding.h */,
+				9D9B9F6B1FB913F3002CD7C3 /* TensorPatch.h */,
+				9D9B9F6C1FB913F3002CD7C3 /* TensorRandom.h */,
+				9D9B9F6D1FB913F3002CD7C3 /* TensorReduction.h */,
+				9D9B9F6E1FB913F3002CD7C3 /* TensorReductionCuda.h */,
+				9D9B9F6F1FB913F3002CD7C3 /* TensorReductionSycl.h */,
+				9D9B9F701FB913F3002CD7C3 /* TensorRef.h */,
+				9D9B9F711FB913F3002CD7C3 /* TensorReverse.h */,
+				9D9B9F721FB913F3002CD7C3 /* TensorScan.h */,
+				9D9B9F731FB913F3002CD7C3 /* TensorShuffling.h */,
+				9D9B9F741FB913F3002CD7C3 /* TensorStorage.h */,
+				9D9B9F751FB913F3002CD7C3 /* TensorStriding.h */,
+				9D9B9F761FB913F3002CD7C3 /* TensorSycl.h */,
+				9D9B9F771FB913F3002CD7C3 /* TensorSyclConvertToDeviceExpression.h */,
+				9D9B9F781FB913F3002CD7C3 /* TensorSyclExprConstructor.h */,
+				9D9B9F791FB913F3002CD7C3 /* TensorSyclExtractAccessor.h */,
+				9D9B9F7A1FB913F3002CD7C3 /* TensorSyclExtractFunctors.h */,
+				9D9B9F7B1FB913F3002CD7C3 /* TensorSyclLeafCount.h */,
+				9D9B9F7C1FB913F3002CD7C3 /* TensorSyclPlaceHolderExpr.h */,
+				9D9B9F7D1FB913F3002CD7C3 /* TensorSyclRun.h */,
+				9D9B9F7E1FB913F3002CD7C3 /* TensorSyclTuple.h */,
+				9D9B9F7F1FB913F3002CD7C3 /* TensorTraits.h */,
+				9D9B9F801FB913F3002CD7C3 /* TensorUInt128.h */,
+				9D9B9F811FB913F3002CD7C3 /* TensorVolumePatch.h */,
+			);
+			path = Tensor;
+			sourceTree = "<group>";
+		};
+		9D9B9F821FB913F3002CD7C3 /* TensorSymmetry */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F831FB913F3002CD7C3 /* DynamicSymmetry.h */,
+				9D9B9F841FB913F3002CD7C3 /* StaticSymmetry.h */,
+				9D9B9F851FB913F3002CD7C3 /* Symmetry.h */,
+				9D9B9F861FB913F3002CD7C3 /* util */,
+			);
+			path = TensorSymmetry;
+			sourceTree = "<group>";
+		};
+		9D9B9F861FB913F3002CD7C3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F871FB913F3002CD7C3 /* TemplateGroupTheory.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		9D9B9F881FB913F3002CD7C3 /* ThreadPool */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F891FB913F3002CD7C3 /* EventCount.h */,
+				9D9B9F8A1FB913F3002CD7C3 /* NonBlockingThreadPool.h */,
+				9D9B9F8B1FB913F3002CD7C3 /* RunQueue.h */,
+				9D9B9F8C1FB913F3002CD7C3 /* SimpleThreadPool.h */,
+				9D9B9F8D1FB913F3002CD7C3 /* ThreadEnvironment.h */,
+				9D9B9F8E1FB913F3002CD7C3 /* ThreadLocal.h */,
+				9D9B9F8F1FB913F3002CD7C3 /* ThreadPoolInterface.h */,
+				9D9B9F901FB913F3002CD7C3 /* ThreadYield.h */,
+			);
+			path = ThreadPool;
+			sourceTree = "<group>";
+		};
+		9D9B9F911FB913F3002CD7C3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9F921FB913F3002CD7C3 /* CXX11Meta.h */,
+				9D9B9F931FB913F3002CD7C3 /* CXX11Workarounds.h */,
+				9D9B9F941FB913F3002CD7C3 /* EmulateArray.h */,
+				9D9B9F951FB913F3002CD7C3 /* EmulateCXX11Meta.h */,
+				9D9B9F961FB913F3002CD7C3 /* MaxSizeVector.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		9D9B9FAA1FB913F3002CD7C3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FAB1FB913F3002CD7C3 /* AutoDiff */,
+				9D9B9FAF1FB913F3002CD7C3 /* BVH */,
+				9D9B9FB21FB913F3002CD7C3 /* Eigenvalues */,
+				9D9B9FB41FB913F3002CD7C3 /* EulerAngles */,
+				9D9B9FB81FB913F3002CD7C3 /* FFT */,
+				9D9B9FBB1FB913F3002CD7C3 /* IterativeSolvers */,
+				9D9B9FC31FB913F3002CD7C3 /* KroneckerProduct */,
+				9D9B9FC51FB913F3002CD7C3 /* LevenbergMarquardt */,
+				9D9B9FCC1FB913F3002CD7C3 /* MatrixFunctions */,
+				9D9B9FD31FB913F3002CD7C3 /* MoreVectorization */,
+				9D9B9FD51FB913F3002CD7C3 /* NonLinearOptimization */,
+				9D9B9FE11FB913F3002CD7C3 /* NumericalDiff */,
+				9D9B9FE31FB913F3002CD7C3 /* Polynomials */,
+				9D9B9FE71FB913F3002CD7C3 /* Skyline */,
+				9D9B9FEE1FB913F3002CD7C3 /* SparseExtra */,
+				9D9B9FF51FB913F3002CD7C3 /* SpecialFunctions */,
+				9D9B9FFE1FB913F3002CD7C3 /* Splines */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9D9B9FAB1FB913F3002CD7C3 /* AutoDiff */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FAC1FB913F3002CD7C3 /* AutoDiffJacobian.h */,
+				9D9B9FAD1FB913F3002CD7C3 /* AutoDiffScalar.h */,
+				9D9B9FAE1FB913F3002CD7C3 /* AutoDiffVector.h */,
+			);
+			path = AutoDiff;
+			sourceTree = "<group>";
+		};
+		9D9B9FAF1FB913F3002CD7C3 /* BVH */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FB01FB913F3002CD7C3 /* BVAlgorithms.h */,
+				9D9B9FB11FB913F3002CD7C3 /* KdBVH.h */,
+			);
+			path = BVH;
+			sourceTree = "<group>";
+		};
+		9D9B9FB21FB913F3002CD7C3 /* Eigenvalues */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FB31FB913F3002CD7C3 /* ArpackSelfAdjointEigenSolver.h */,
+			);
+			path = Eigenvalues;
+			sourceTree = "<group>";
+		};
+		9D9B9FB41FB913F3002CD7C3 /* EulerAngles */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FB51FB913F3002CD7C3 /* CMakeLists.txt */,
+				9D9B9FB61FB913F3002CD7C3 /* EulerAngles.h */,
+				9D9B9FB71FB913F3002CD7C3 /* EulerSystem.h */,
+			);
+			path = EulerAngles;
+			sourceTree = "<group>";
+		};
+		9D9B9FB81FB913F3002CD7C3 /* FFT */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FB91FB913F3002CD7C3 /* ei_fftw_impl.h */,
+				9D9B9FBA1FB913F3002CD7C3 /* ei_kissfft_impl.h */,
+			);
+			path = FFT;
+			sourceTree = "<group>";
+		};
+		9D9B9FBB1FB913F3002CD7C3 /* IterativeSolvers */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FBC1FB913F3002CD7C3 /* ConstrainedConjGrad.h */,
+				9D9B9FBD1FB913F3002CD7C3 /* DGMRES.h */,
+				9D9B9FBE1FB913F3002CD7C3 /* GMRES.h */,
+				9D9B9FBF1FB913F3002CD7C3 /* IncompleteLU.h */,
+				9D9B9FC01FB913F3002CD7C3 /* IterationController.h */,
+				9D9B9FC11FB913F3002CD7C3 /* MINRES.h */,
+				9D9B9FC21FB913F3002CD7C3 /* Scaling.h */,
+			);
+			path = IterativeSolvers;
+			sourceTree = "<group>";
+		};
+		9D9B9FC31FB913F3002CD7C3 /* KroneckerProduct */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FC41FB913F3002CD7C3 /* KroneckerTensorProduct.h */,
+			);
+			path = KroneckerProduct;
+			sourceTree = "<group>";
+		};
+		9D9B9FC51FB913F3002CD7C3 /* LevenbergMarquardt */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FC61FB913F3002CD7C3 /* CopyrightMINPACK.txt */,
+				9D9B9FC71FB913F3002CD7C3 /* LevenbergMarquardt.h */,
+				9D9B9FC81FB913F3002CD7C3 /* LMcovar.h */,
+				9D9B9FC91FB913F3002CD7C3 /* LMonestep.h */,
+				9D9B9FCA1FB913F3002CD7C3 /* LMpar.h */,
+				9D9B9FCB1FB913F3002CD7C3 /* LMqrsolv.h */,
+			);
+			path = LevenbergMarquardt;
+			sourceTree = "<group>";
+		};
+		9D9B9FCC1FB913F3002CD7C3 /* MatrixFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FCD1FB913F3002CD7C3 /* MatrixExponential.h */,
+				9D9B9FCE1FB913F3002CD7C3 /* MatrixFunction.h */,
+				9D9B9FCF1FB913F3002CD7C3 /* MatrixLogarithm.h */,
+				9D9B9FD01FB913F3002CD7C3 /* MatrixPower.h */,
+				9D9B9FD11FB913F3002CD7C3 /* MatrixSquareRoot.h */,
+				9D9B9FD21FB913F3002CD7C3 /* StemFunction.h */,
+			);
+			path = MatrixFunctions;
+			sourceTree = "<group>";
+		};
+		9D9B9FD31FB913F3002CD7C3 /* MoreVectorization */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FD41FB913F3002CD7C3 /* MathFunctions.h */,
+			);
+			path = MoreVectorization;
+			sourceTree = "<group>";
+		};
+		9D9B9FD51FB913F3002CD7C3 /* NonLinearOptimization */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FD61FB913F3002CD7C3 /* chkder.h */,
+				9D9B9FD71FB913F3002CD7C3 /* covar.h */,
+				9D9B9FD81FB913F3002CD7C3 /* dogleg.h */,
+				9D9B9FD91FB913F3002CD7C3 /* fdjac1.h */,
+				9D9B9FDA1FB913F3002CD7C3 /* HybridNonLinearSolver.h */,
+				9D9B9FDB1FB913F3002CD7C3 /* LevenbergMarquardt.h */,
+				9D9B9FDC1FB913F3002CD7C3 /* lmpar.h */,
+				9D9B9FDD1FB913F3002CD7C3 /* qrsolv.h */,
+				9D9B9FDE1FB913F3002CD7C3 /* r1mpyq.h */,
+				9D9B9FDF1FB913F3002CD7C3 /* r1updt.h */,
+				9D9B9FE01FB913F3002CD7C3 /* rwupdt.h */,
+			);
+			path = NonLinearOptimization;
+			sourceTree = "<group>";
+		};
+		9D9B9FE11FB913F3002CD7C3 /* NumericalDiff */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FE21FB913F3002CD7C3 /* NumericalDiff.h */,
+			);
+			path = NumericalDiff;
+			sourceTree = "<group>";
+		};
+		9D9B9FE31FB913F3002CD7C3 /* Polynomials */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FE41FB913F3002CD7C3 /* Companion.h */,
+				9D9B9FE51FB913F3002CD7C3 /* PolynomialSolver.h */,
+				9D9B9FE61FB913F3002CD7C3 /* PolynomialUtils.h */,
+			);
+			path = Polynomials;
+			sourceTree = "<group>";
+		};
+		9D9B9FE71FB913F3002CD7C3 /* Skyline */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FE81FB913F3002CD7C3 /* SkylineInplaceLU.h */,
+				9D9B9FE91FB913F3002CD7C3 /* SkylineMatrix.h */,
+				9D9B9FEA1FB913F3002CD7C3 /* SkylineMatrixBase.h */,
+				9D9B9FEB1FB913F3002CD7C3 /* SkylineProduct.h */,
+				9D9B9FEC1FB913F3002CD7C3 /* SkylineStorage.h */,
+				9D9B9FED1FB913F3002CD7C3 /* SkylineUtil.h */,
+			);
+			path = Skyline;
+			sourceTree = "<group>";
+		};
+		9D9B9FEE1FB913F3002CD7C3 /* SparseExtra */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FEF1FB913F3002CD7C3 /* BlockOfDynamicSparseMatrix.h */,
+				9D9B9FF01FB913F3002CD7C3 /* BlockSparseMatrix.h */,
+				9D9B9FF11FB913F3002CD7C3 /* DynamicSparseMatrix.h */,
+				9D9B9FF21FB913F3002CD7C3 /* MarketIO.h */,
+				9D9B9FF31FB913F3002CD7C3 /* MatrixMarketIterator.h */,
+				9D9B9FF41FB913F3002CD7C3 /* RandomSetter.h */,
+			);
+			path = SparseExtra;
+			sourceTree = "<group>";
+		};
+		9D9B9FF51FB913F3002CD7C3 /* SpecialFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FF61FB913F3002CD7C3 /* arch */,
+				9D9B9FF91FB913F3002CD7C3 /* SpecialFunctionsArrayAPI.h */,
+				9D9B9FFA1FB913F3002CD7C3 /* SpecialFunctionsFunctors.h */,
+				9D9B9FFB1FB913F3002CD7C3 /* SpecialFunctionsHalf.h */,
+				9D9B9FFC1FB913F3002CD7C3 /* SpecialFunctionsImpl.h */,
+				9D9B9FFD1FB913F3002CD7C3 /* SpecialFunctionsPacketMath.h */,
+			);
+			path = SpecialFunctions;
+			sourceTree = "<group>";
+		};
+		9D9B9FF61FB913F3002CD7C3 /* arch */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FF71FB913F3002CD7C3 /* CUDA */,
+			);
+			path = arch;
+			sourceTree = "<group>";
+		};
+		9D9B9FF71FB913F3002CD7C3 /* CUDA */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FF81FB913F3002CD7C3 /* CudaSpecialFunctions.h */,
+			);
+			path = CUDA;
+			sourceTree = "<group>";
+		};
+		9D9B9FFE1FB913F3002CD7C3 /* Splines */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B9FFF1FB913F3002CD7C3 /* Spline.h */,
+				9D9BA0001FB913F3002CD7C3 /* SplineFitting.h */,
+				9D9BA0011FB913F3002CD7C3 /* SplineFwd.h */,
+			);
+			path = Splines;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		592FF8B418ECBD7600C164F8 /* CameraExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 592FF8E318ECBD7600C164F8 /* Build configuration list for PBXNativeTarget "CameraExample" */;
+			buildPhases = (
+				592FF8B118ECBD7600C164F8 /* Sources */,
+				592FF8B218ECBD7600C164F8 /* Frameworks */,
+				592FF8B318ECBD7600C164F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraExample;
+			productName = SimpleExample;
+			productReference = 592FF8B518ECBD7600C164F8 /* CameraExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		592FF8AB18ECBD3600C164F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					592FF8B418ECBD7600C164F8 = {
+						DevelopmentTeam = WALPPQ5LTB;
+					};
+				};
+			};
+			buildConfigurationList = 592FF8AE18ECBD3600C164F8 /* Build configuration list for PBXProject "yoga101_demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 592FF8AA18ECBD3600C164F8;
+			productRefGroup = 592FF8B618ECBD7600C164F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				592FF8B418ECBD7600C164F8 /* CameraExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		592FF8B318ECBD7600C164F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D9BA0991FB913F3002CD7C3 /* CopyrightMINPACK.txt in Resources */,
+				9D9BA08F1FB913F3002CD7C3 /* MPRealSupport in Resources */,
+				9D9BA07E1FB913F3002CD7C3 /* AlignedVector3 in Resources */,
+				9D9BA0931FB913F3002CD7C3 /* Polynomials in Resources */,
+				9D9BA0861FB913F3002CD7C3 /* TensorSymmetry in Resources */,
+				9D9BA0921FB913F3002CD7C3 /* OpenGLSupport in Resources */,
+				9D9BA0881FB913F3002CD7C3 /* EulerAngles in Resources */,
+				9D9BA0941FB913F3002CD7C3 /* Skyline in Resources */,
+				9D9BA08A1FB913F3002CD7C3 /* IterativeSolvers in Resources */,
+				9D9BA0981FB913F3002CD7C3 /* CMakeLists.txt in Resources */,
+				9D9BA06A1FB913F3002CD7C3 /* CMakeLists.txt in Resources */,
+				9D9BA0901FB913F3002CD7C3 /* NonLinearOptimization in Resources */,
+				9D9BA08C1FB913F3002CD7C3 /* LevenbergMarquardt in Resources */,
+				CBB0B4501E8263FC00C7F7F2 /* mem_graph.pb in Resources */,
+				9D9BA0851FB913F3002CD7C3 /* Tensor in Resources */,
+				9D9BA0911FB913F3002CD7C3 /* NumericalDiff in Resources */,
+				9D9BA09A1FB913F3002CD7C3 /* README.txt in Resources */,
+				9D9BA07D1FB913F3002CD7C3 /* AdolcForward in Resources */,
+				9D9BA0951FB913F3002CD7C3 /* SparseExtra in Resources */,
+				9D9BA08E1FB913F3002CD7C3 /* MoreVectorization in Resources */,
+				9D9BA08D1FB913F3002CD7C3 /* MatrixFunctions in Resources */,
+				9D9BA0961FB913F3002CD7C3 /* SpecialFunctions in Resources */,
+				9D9BA0811FB913F3002CD7C3 /* BVH in Resources */,
+				9D9BA0971FB913F3002CD7C3 /* Splines in Resources */,
+				9D9BA07F1FB913F3002CD7C3 /* ArpackSupport in Resources */,
+				592FF90D18EDD0DA00C164F8 /* MainStoryboard_iPhone.storyboard in Resources */,
+				9D9BA08B1FB913F3002CD7C3 /* KroneckerProduct in Resources */,
+				9D9BA0891FB913F3002CD7C3 /* FFT in Resources */,
+				9D9BA0831FB913F3002CD7C3 /* CMakeLists.txt in Resources */,
+				9D576020216D42EB00535D50 /* yoga101_labels.txt in Resources */,
+				9D9BA0871FB913F3002CD7C3 /* ThreadPool in Resources */,
+				9D9BA0801FB913F3002CD7C3 /* AutoDiff in Resources */,
+				9D9BA0821FB913F3002CD7C3 /* CMakeLists.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		592FF8B118ECBD7600C164F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D9BA0841FB913F3002CD7C3 /* README.md in Sources */,
+				592FF90218ECC66200C164F8 /* main.mm in Sources */,
+				591D3ED21CFF85C30059011C /* ios_image_load.mm in Sources */,
+				592FF92618EE240200C164F8 /* CameraExampleViewController.mm in Sources */,
+				592FF92518EE240200C164F8 /* CameraExampleAppDelegate.m in Sources */,
+				591D3ED51CFF85FD0059011C /* tensorflow_utils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		592FF90A18EDD0DA00C164F8 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				592FF90B18EDD0DA00C164F8 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		592FF8AF18ECBD3600C164F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"../tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"-force_load",
+					"-lprotobuf",
+					"-lprotobuf-lite",
+					"-ltensorflow-core",
+				);
+			};
+			name = Debug;
+		};
+		592FF8B018ECBD3600C164F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = (
+					"../tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"-force_load",
+					"-lprotobuf",
+					"-lprotobuf-lite",
+					"-ltensorflow-core",
+				);
+			};
+			name = Release;
+		};
+		592FF8DF18ECBD7600C164F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WALPPQ5LTB;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/proto",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads/eigen",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads/protobuf/src/",
+					"$(SRCROOT)/../../tensorflow",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/lib",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/protobuf_ios/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"-ltensorflow-core",
+					"-lprotobuf-lite",
+					"-lprotobuf",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stratospark.Yoga101Jay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		592FF8E018ECBD7600C164F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = WALPPQ5LTB;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/proto",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads/eigen",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads/protobuf/src/",
+					"$(SRCROOT)/../../tensorflow",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/lib",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/protobuf_ios/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/gen/lib/libtensorflow-core.a",
+					"-ltensorflow-core",
+					"-lprotobuf-lite",
+					"-lprotobuf",
+					"$(SRCROOT)/../../tensorflow/tensorflow/contrib/makefile/downloads/nsync/builds/lipo.ios.c++11/nsync.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stratospark.Yoga101Jay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		592FF8AE18ECBD3600C164F8 /* Build configuration list for PBXProject "yoga101_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592FF8AF18ECBD3600C164F8 /* Debug */,
+				592FF8B018ECBD3600C164F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		592FF8E318ECBD7600C164F8 /* Build configuration list for PBXNativeTarget "CameraExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				592FF8DF18ECBD7600C164F8 /* Debug */,
+				592FF8E018ECBD7600C164F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 592FF8AB18ECBD3600C164F8 /* Project object */;
+}
