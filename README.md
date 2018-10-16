@@ -1,5 +1,5 @@
 ## A Simple Mobile App that does Yoga Pose Detection
-An ios application that detects 8 yoga poses with a Tensorflow model. 
+An iOS application that detects 8 yoga poses with a Tensorflow model. 
 
 ## Demo:
 
